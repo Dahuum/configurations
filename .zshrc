@@ -1,6 +1,6 @@
-export ZSH="/root/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="robbyrussell"
-plugins=( 
+plugins=(
     # other plugins...
     zsh-autosuggestions
     zsh-syntax-highlighting
@@ -22,5 +22,6 @@ zstyle ':vcs_info:git:*' formats '%F{white}[%F{blue}%b%F{white}]%f'
 PS1='%F{255}⎇ %F{blue}%1~ %F{white}❯%f ${vcs_info_msg_0_} '
 
 export PATH="$HOME/.cargo/bin:$PATH"
-
+export HOME="/home/void_id"
 echo -ne "\e[4 q"
+export PATH=$HOME/.local/bin:$PATH
